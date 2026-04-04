@@ -44,22 +44,16 @@ class NewsChannel:
         self.ChannelName = ChannelName
 
     def update(self, news):
-        print(self.ChannelName + ' rcvd '+ self.news)
+        print(self.ChannelName + ' rcvd '+ news)
 
 
 if __name__ == '__main__':
     agency = NewsAgency()
 
-    cnn = NewsChannel()
-    bbc = NewsChannel()
+    cnn = NewsChannel('cnn')
+    bbc = NewsChannel('bbc')
 
     agency.attach(cnn)
     agency.attach(bbc)
 
     agency.set_news('this is news')
-
-
-
-
-    
-
