@@ -1,7 +1,7 @@
-from abc import ABC, abstract
+from abc import ABC, abstractmethod
 
 class PaymentStrategy:
-    @abstract
+    @abstractmethod
     def pay(self):
         pass
 
